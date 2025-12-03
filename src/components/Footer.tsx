@@ -12,12 +12,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center">
           {/* Logo */}
-          <div className="flex items-center gap-2 mb-4">
-            <Mic className="w-8 h-8 text-primary" />
-            <span className="font-heading text-2xl font-extrabold">
-              <span className="text-primary">Emcee</span>{" "}
-              <span className="text-foreground">Manoj</span>
-            </span>
+          <div className="flex items-center justify-center mb-4">
+            <img
+              src="/logo.png"
+              alt="Emcee Manoj"
+              className="h-16 w-auto"
+            />
           </div>
 
           {/* Tagline */}

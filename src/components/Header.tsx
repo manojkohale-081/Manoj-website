@@ -33,13 +33,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="font-heading text-2xl font-extrabold text-primary">
-              Emcee
-            </span>
-            <span className="font-heading text-2xl font-extrabold text-foreground">
-              Manoj
-            </span>
+          <a href="#" className="flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="Emcee Manoj" 
+              className="h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}

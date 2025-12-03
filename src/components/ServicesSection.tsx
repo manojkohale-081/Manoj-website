@@ -36,13 +36,11 @@ const ServicesSection = () => {
     <section id="services" className="py-20 bg-background relative">
       {/* Background elements */}
       <div className="absolute inset-0 bg-spotlight opacity-50 pointer-events-none" />
-      
+
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="font-body text-primary text-sm uppercase tracking-wider mb-2">
-            What He Hosts
-          </p>
+
           <h2 className="font-heading text-4xl md:text-5xl font-extrabold text-foreground mb-4">
             Services
           </h2>
@@ -60,7 +58,7 @@ const ServicesSection = () => {
             >
               {/* Hover gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
+
               <div className="relative">
                 {/* Icon */}
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">

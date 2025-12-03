@@ -1,18 +1,76 @@
+import { useState, useEffect, useRef } from "react";
 import { MapPin, Users, Calendar, Globe } from "lucide-react";
 
 const stats = [
-  { icon: Calendar, value: "8+", label: "Years Experience" },
-  { icon: Users, value: "1000+", label: "Live Shows" },
-  { icon: Users, value: "40,000+", label: "Audience Reached" },
-  { icon: Globe, value: "Global", label: "Presence" },
+  { icon: Calendar, value: "8+", label: "Years Experience", numericValue: 8 },
+  { icon: Users, value: "1000+", label: "Live Shows", numericValue: 1000 },
+  { icon: Users, value: "40,000+", label: "Audience Reached", numericValue: 40000 },
+  { icon: Globe, value: "Global", label: "Presence", numericValue: null },
 ];
 
 const AboutSection = () => {
+  const [counts, setCounts] = useState(stats.map(() => 0));
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const statsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+
+          stats.forEach((stat, index) => {
+            if (stat.numericValue !== null) {
+              const duration = 2000; // 2 seconds
+              const steps = 60;
+              const increment = stat.numericValue / steps;
+              let currentStep = 0;
+
+              const timer = setInterval(() => {
+                currentStep++;
+                setCounts((prev) => {
+                  const newCounts = [...prev];
+                  newCounts[index] = Math.min(
+                    Math.round(increment * currentStep),
+                    stat.numericValue!
+                  );
+                  return newCounts;
+                });
+
+                if (currentStep >= steps) {
+                  clearInterval(timer);
+                }
+              }, duration / steps);
+            }
+          });
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  const formatValue = (index: number) => {
+    const stat = stats[index];
+    if (stat.numericValue === null) return stat.value;
+
+    const count = counts[index];
+    if (stat.value.includes(",")) {
+      return `${count.toLocaleString()}+`;
+    }
+    return `${count}+`;
+  };
+
   return (
     <section id="about" className="py-20 bg-card relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -34,7 +92,7 @@ const AboutSection = () => {
               <strong className="text-foreground">1000+ live shows</strong>, and stages that have seen{" "}
               <strong className="text-foreground">40,000 people cheering</strong> under his mic.
             </p>
-            
+
             <p className="font-body text-lg text-foreground/80 leading-relaxed mb-8">
               He hosts <span className="text-primary">corporate events</span>,{" "}
               <span className="text-primary">weddings</span>,{" "}
@@ -66,8 +124,8 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {/* Stats Grid with Counting Animation */}
+          <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -75,7 +133,7 @@ const AboutSection = () => {
               >
                 <stat.icon className="w-10 h-10 text-primary mx-auto mb-3" />
                 <p className="font-heading text-3xl md:text-4xl font-extrabold text-foreground">
-                  {stat.value}
+                  {formatValue(index)}
                 </p>
                 <p className="font-body text-sm text-muted-foreground mt-1">
                   {stat.label}

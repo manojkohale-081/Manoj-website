@@ -1,4 +1,5 @@
 import { Building2, Heart, Trophy, Music2, Image } from "lucide-react";
+import InstagramReels from "./InstagramReels";
 
 const portfolioCategories = [
   {
@@ -41,9 +42,7 @@ const PortfolioSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="font-body text-primary text-sm uppercase tracking-wider mb-2">
-            Portfolio
-          </p>
+
           <h2 className="font-heading text-4xl md:text-5xl font-extrabold text-foreground mb-4">
             Every Stage. Every Emotion. Every Audience.
           </h2>
@@ -112,6 +111,9 @@ const PortfolioSection = () => {
           <p className="font-accent text-muted-foreground mt-6 italic">
             "You can feel the energy even in pictures."
           </p>
+
+          {/* Instagram Reels Section */}
+          <InstagramReels />
         </div>
       </div>
     </section>

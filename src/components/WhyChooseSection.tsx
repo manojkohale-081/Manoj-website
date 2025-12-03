@@ -15,14 +15,12 @@ const WhyChooseSection = () => {
       {/* Decorative elements */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute right-0 bottom-0 w-48 h-48 bg-secondary/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <p className="font-body text-primary text-sm uppercase tracking-wider mb-2">
-              The Difference
-            </p>
+
             <h2 className="font-heading text-4xl md:text-5xl font-extrabold text-foreground mb-4">
               Why <span className="text-primary">Emcee Manoj</span>?
             </h2>
