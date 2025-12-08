@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const SQRT_5000 = Math.sqrt(5000);
@@ -175,6 +175,15 @@ export const StaggerTestimonials: React.FC = () => {
         setTestimonialsList(newList);
     };
 
+    // Auto-slide effect
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleMove(1);
+        }, 3000); // Slide every 3 seconds
+
+        return () => clearInterval(interval);
+    }, [testimonialsList]);
+
     useEffect(() => {
         const updateSize = () => {
             const { matches } = window.matchMedia("(min-width: 640px)");
@@ -205,30 +214,6 @@ export const StaggerTestimonials: React.FC = () => {
                     />
                 );
             })}
-            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
-                <button
-                    onClick={() => handleMove(-1)}
-                    className={cn(
-                        "flex h-14 w-14 items-center justify-center text-2xl transition-colors rounded-xl",
-                        "bg-background border-2 border-border hover:bg-primary hover:text-primary-foreground hover:border-primary",
-                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                    )}
-                    aria-label="Previous testimonial"
-                >
-                    <ChevronLeft />
-                </button>
-                <button
-                    onClick={() => handleMove(1)}
-                    className={cn(
-                        "flex h-14 w-14 items-center justify-center text-2xl transition-colors rounded-xl",
-                        "bg-background border-2 border-border hover:bg-primary hover:text-primary-foreground hover:border-primary",
-                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                    )}
-                    aria-label="Next testimonial"
-                >
-                    <ChevronRight />
-                </button>
-            </div>
         </div>
     );
 };
