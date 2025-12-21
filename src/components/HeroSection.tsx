@@ -12,11 +12,20 @@ const acronymData = [
   { letter: "J", meaning: "Just the Best Vibes" },
 ];
 
+const heroImages = [
+  "/Manoj Images/Manoj 1.jpg",
+  "/Manoj Images/manoj 2.JPG",
+  "/Manoj Images/Manoj 3.JPEG",
+  "/Manoj Images/Manoj 4.JPG",
+  "/Manoj Images/Manoj 5.JPG",
+];
+
 const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
 
+  // Acronym animation - also controls image changes
   useEffect(() => {
     const interval = setInterval(() => {
       setIsAnimating(true);
@@ -72,8 +81,8 @@ const HeroSection = () => {
                   <span
                     key={item.letter}
                     className={`font-heading text-3xl md:text-4xl font-extrabold transition-all duration-300 ${index === activeIndex
-                        ? "text-primary scale-125"
-                        : "text-foreground/40"
+                      ? "text-primary scale-125"
+                      : "text-foreground/40"
                       } ${index === activeIndex && isAnimating ? "letter-flip" : ""}`}
                   >
                     {item.letter}
@@ -114,7 +123,7 @@ const HeroSection = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="#portfolio" className="flex items-center gap-2">
+                <a href="#reels" className="flex items-center gap-2">
                   <Play className="w-5 h-5" />
                   Watch the Magic
                 </a>
@@ -133,16 +142,29 @@ const HeroSection = () => {
               {/* Glow effect behind image */}
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-90" />
 
-              {/* Hero Image */}
+              {/* Hero Image Carousel - Synced with M A N O J */}
               <div
                 className="relative w-80 h-96 md:w-96 md:h-[500px] rounded-3xl overflow-hidden border-4 border-primary/30 shadow-2xl cursor-pointer transition-transform hover:scale-105"
                 onClick={() => setIsImagePopupOpen(true)}
               >
-                <img
-                  src="/hero-manoj.jpg"
-                  alt="Emcee Manoj - Professional Anchor and Host"
-                  className="w-full h-full object-cover"
-                />
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={activeIndex}
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{
+                      duration: 0.8,
+                      ease: "easeInOut"
+                    }}
+                    src={heroImages[activeIndex]}
+                    alt="Emcee Manoj - Professional Anchor and Host"
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </AnimatePresence>
               </div>
 
               {/* Social Media Dock */}
@@ -213,8 +235,9 @@ const HeroSection = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src="/hero-manoj.jpg"
+                src={heroImages[activeIndex]}
                 alt="Emcee Manoj - Professional Anchor and Host"
+                loading="eager"
                 className="w-full h-full object-contain rounded-2xl"
               />
             </motion.div>

@@ -11,7 +11,7 @@ const reels = [
 
 const InstagramReels = () => {
     return (
-        <div className="mt-16">
+        <div id="reels" className="mt-16">
             <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center flex items-center justify-center gap-2">
                 <Instagram className="w-7 h-7 text-primary" />
                 Watch the Energy

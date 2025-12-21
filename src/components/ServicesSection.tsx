@@ -12,7 +12,7 @@ const services = [
     icon: Heart,
     title: "Wedding & Sangeet Hosting",
     subtitle: "Receptions | Sangeets | Haldi | Cocktail Nights",
-    description: "He brings the love, the laughs, and the legendary dance-offs—and he makes sure it all flows.",
+    description: "He brings the love, the laughs, and the legendary dance-offs, and he makes sure it all flows.",
     tags: ["Wedding Anchor Nagpur", "Wedding Anchor Pune", "Wedding Anchor India"],
   },
   {
@@ -45,7 +45,7 @@ const ServicesSection = () => {
             Services
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            From boardrooms to baraats — professional hosting for every occasion
+            From boardrooms to baraats, professional hosting for every occasion
           </p>
         </div>
 

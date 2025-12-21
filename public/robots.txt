@@ -1,14 +1,48 @@
+# Allow all search engines and AI crawlers
+User-agent: *
+Allow: /
+
+# Google
 User-agent: Googlebot
 Allow: /
 
+# Bing
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+# ChatGPT (OpenAI)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Common Crawl (used by many AI systems)
+User-agent: CCBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Claude (Anthropic)
+User-agent: ClaudeBot
+Allow: /
+
+# Google Extended (for Gemini/Bard)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+# Twitter/X
+User-agent: Twitterbot
 Allow: /
+
+# Sitemap location
+Sitemap: https://emceemanoj.com/sitemap.xml

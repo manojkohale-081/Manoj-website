@@ -3,7 +3,7 @@ import { Mic, Users, Calendar, Globe } from "lucide-react";
 
 const stats = [
   { icon: Mic, value: "1000+", label: "Shows Hosted", numericValue: 1000 },
-  { icon: Users, value: "14K+", label: "Audience Community", numericValue: 14000 },
+  { icon: Users, value: "23K+", label: "Audience Community", numericValue: 23000 },
   { icon: Calendar, value: "8+", label: "Years on Stage", numericValue: 8 },
   { icon: Globe, value: "Global", label: "Pan India + International", numericValue: null },
 ];

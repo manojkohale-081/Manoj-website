@@ -16,7 +16,7 @@ const testimonials = [
     },
     {
         tempId: 1,
-        testimonial: "Your anchoring was truly heartfelt and captivating. The way you connected with the audience, spoke with warmth, and carried the entire event with grace was beautiful to watch. You didn't just host the show — you touched hearts.",
+        testimonial: "Your anchoring was truly heartfelt and captivating. The way you connected with the audience, spoke with warmth, and carried the entire event with grace was beautiful to watch. You didn't just host the show, you touched hearts.",
         by: "Gaurav Mishra, Event Client",
         imgSrc: "https://ui-avatars.com/api/?name=Gaurav+Mishra&background=FF6B6B&color=fff&size=150",
         reviewUrl: "https://maps.app.goo.gl/oF2e8mNbywMsPHsu6"
@@ -51,7 +51,7 @@ const testimonials = [
     },
     {
         tempId: 6,
-        testimonial: "Professional hosting for every occasion. From boardrooms to baraats — Emcee Manoj brings the energy!",
+        testimonial: "Professional hosting for every occasion. From boardrooms to baraats, Emcee Manoj brings the energy!",
         by: "Corporate Event Organizer",
         imgSrc: "https://ui-avatars.com/api/?name=Event+Pro&background=6C5CE7&color=fff&size=150",
         reviewUrl: ""

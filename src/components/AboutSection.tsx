@@ -4,7 +4,7 @@ import { MapPin, Users, Calendar, Globe } from "lucide-react";
 const stats = [
   { icon: Calendar, value: "8+", label: "Years Experience", numericValue: 8 },
   { icon: Users, value: "1000+", label: "Live Shows", numericValue: 1000 },
-  { icon: Users, value: "40,000+", label: "Audience Reached", numericValue: 40000 },
+  { icon: Users, value: "40,000+", label: "Audience Reached", numericValue: 100000 },
   { icon: Globe, value: "Global", label: "Presence", numericValue: null },
 ];
 
@@ -86,8 +86,8 @@ const AboutSection = () => {
           {/* Bio Content */}
           <div className="bg-background/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-border mb-12">
             <p className="font-body text-lg text-foreground/80 leading-relaxed mb-6">
-              <strong className="text-foreground">Manoj Rameshwar Kohale</strong> — aka{" "}
-              <span className="text-primary font-semibold">Emcee Manoj</span> — is a high-energy anchor with{" "}
+              <strong className="text-foreground">Manoj Rameshwar Kohale</strong>, aka{" "}
+              <span className="text-primary font-semibold">Emcee Manoj</span>, is a high-energy anchor with{" "}
               <strong className="text-foreground">8+ years of experience</strong>, over{" "}
               <strong className="text-foreground">1000+ live shows</strong>, and stages that have seen{" "}
               <strong className="text-foreground">40,000 people cheering</strong> under his mic.
@@ -97,7 +97,7 @@ const AboutSection = () => {
               He hosts <span className="text-primary">corporate events</span>,{" "}
               <span className="text-primary">weddings</span>,{" "}
               <span className="text-primary">concerts</span> &{" "}
-              <span className="text-primary">sports</span> with a style that is professional + playful — a rare mix that audiences love.
+              <span className="text-primary">sports</span> with a style that is professional + playful, a rare mix that audiences love.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center text-sm">
@@ -107,7 +107,7 @@ const AboutSection = () => {
               </span>
               <span className="flex items-center gap-2 bg-accent/50 px-4 py-2 rounded-full">
                 <Users className="w-4 h-4 text-primary" />
-                14k+ Social Community
+                23K+ Social Community
               </span>
               <span className="flex items-center gap-2 bg-accent/50 px-4 py-2 rounded-full">
                 <Globe className="w-4 h-4 text-primary" />
@@ -119,7 +119,7 @@ const AboutSection = () => {
           {/* USP Line */}
           <div className="text-center mb-16">
             <p className="font-accent text-2xl md:text-3xl text-foreground italic">
-              "An anchor who doesn't wait for applause —{" "}
+              "An anchor who doesn't wait for applause,{" "}
               <span className="text-primary font-semibold">he creates it.</span>"
             </p>
           </div>

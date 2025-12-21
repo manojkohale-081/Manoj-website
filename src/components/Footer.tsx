@@ -1,9 +1,9 @@
 import { Instagram, Youtube, Linkedin, Mic } from "lucide-react";
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/emcee_manoj/", label: "Instagram" },
+  { icon: Youtube, href: "https://www.youtube.com/@emceemanoj/", label: "YouTube" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/manojkohale96/", label: "LinkedIn" },
 ];
 
 const Footer = () => {
@@ -41,19 +41,22 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Copyright & Links */}
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-4">
-            <a href="#" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <span>•</span>
-            <a href="#" className="hover:text-primary transition-colors">
-              Terms of Service
-            </a>
-          </div>
-
-          <p className="text-sm text-muted-foreground">
+          {/* Copyright */}
+          <p className="text-sm text-muted-foreground mb-2">
             © {new Date().getFullYear()} Emcee Manoj. All Rights Reserved.
+          </p>
+
+          {/* Built by */}
+          <p className="text-xs text-muted-foreground/70">
+            Built with 💗 by{" "}
+            <a
+              href="https://pluginpop.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline transition-colors"
+            >
+              pluginpop.com
+            </a>
           </p>
         </div>
       </div>
