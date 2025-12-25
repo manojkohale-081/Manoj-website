@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex items-center justify-center mb-4">
             <img
-              src="/logo.png"
+              src="/optimized/logo-medium.webp"
               alt="Emcee Manoj"
               className="h-16 w-auto"
             />

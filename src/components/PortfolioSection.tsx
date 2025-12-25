@@ -10,7 +10,7 @@ const portfolioCategories = [
     tagline: "Brands trust him. Audiences remember him.",
     locations: "Corporate Anchor in Pune | Mumbai | Nagpur",
     color: "from-blue-500/20 to-transparent",
-    image: "/Corporate/Corporate Exp.JPG",
+    image: "/optimized/Corporate/Corporate Exp-medium.webp",
   },
   {
     icon: Heart,
@@ -19,7 +19,7 @@ const portfolioCategories = [
     tagline: "Every memory becomes a reel.",
     locations: "Wedding Anchor India | Hindi/Marathi Emcee",
     color: "from-pink-500/20 to-transparent",
-    image: "/Shadi events/Weeding and Sangeet Night.jpg",
+    image: "/optimized/Shadi events/Weeding and Sangeet Night-medium.webp",
   },
   {
     icon: Trophy,
@@ -28,7 +28,7 @@ const portfolioCategories = [
     tagline: "He keeps the crowd roaring higher than the scoreboard.",
     locations: "Sports Anchor Maharashtra",
     color: "from-green-500/20 to-transparent",
-    image: "/Mpl/MPL Hosting.JPG",
+    image: "/optimized/Mpl/MPL Hosting-medium.webp",
   },
   {
     icon: Music2,
@@ -37,23 +37,23 @@ const portfolioCategories = [
     tagline: "He isn't just hosting, he's running the vibe.",
     locations: "Concert Emcee | Event Host India",
     color: "from-purple-500/20 to-transparent",
-    image: "/Corporate/Concert.JPG",
+    image: "/optimized/Corporate/Concert-medium.webp",
   },
 ];
 
 const galleryImages = [
-  "6D5A9982.JPG",
-  "DSC00439.jpg",
-  "DSC09651.JPG",
-  "DSC_7917.JPG",
-  "IMG_1861.JPG",
-  "IMG_3322.JPG",
-  "MHRA3599.JPG",
-  "MHRA4176.JPG",
-  "MHRA6206.JPG",
-  "NMG05427.JPG",
-  "Prajakta mali .JPG",
-  "Yashraj mukhate.JPG"
+  "6D5A9982-thumbnail.webp",
+  "DSC00439-thumbnail.webp",
+  "DSC09651-thumbnail.webp",
+  "DSC_7917-thumbnail.webp",
+  "IMG_1861-thumbnail.webp",
+  "IMG_3322-thumbnail.webp",
+  "MHRA3599-thumbnail.webp",
+  "MHRA4176-thumbnail.webp",
+  "MHRA6206-thumbnail.webp",
+  "NMG05427-thumbnail.webp",
+  "Prajakta mali -thumbnail.webp",
+  "Yashraj mukhate-thumbnail.webp"
 ];
 
 // Shuffle function
@@ -151,7 +151,7 @@ const PortfolioSection = () => {
                 className="aspect-square rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/50 transition-all hover:scale-105 cursor-pointer"
               >
                 <img
-                  src={`/Bts/${image}`}
+                  src={`/optimized/Bts/${image}`}
                   alt={`Behind the scenes ${index + 1}`}
                   loading="lazy"
                   className="w-full h-full object-cover"
@@ -185,7 +185,7 @@ const PortfolioSection = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={`/Bts/${selectedImage}`}
+                src={`/optimized/Bts/${selectedImage.replace('-thumbnail', '-large')}`}
                 alt="Gallery image"
                 className="w-full h-full object-contain rounded-2xl"
               />

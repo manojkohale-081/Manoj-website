@@ -13,11 +13,11 @@ const acronymData = [
 ];
 
 const heroImages = [
-  "/Manoj Images/Manoj 1.jpg",
-  "/Manoj Images/manoj 2.JPG",
-  "/Manoj Images/Manoj 3.JPEG",
-  "/Manoj Images/Manoj 4.JPG",
-  "/Manoj Images/Manoj 5.JPG",
+  "/optimized/Manoj Images/Manoj 1-medium.webp",
+  "/optimized/Manoj Images/manoj 2-medium.webp",
+  "/optimized/Manoj Images/Manoj 3-medium.webp",
+  "/optimized/Manoj Images/Manoj 4-medium.webp",
+  "/optimized/Manoj Images/Manoj 5-medium.webp",
 ];
 
 const HeroSection = () => {

@@ -341,18 +341,18 @@
     "variants": {
       "thumbnail": {
         "path": "optimized\\Manoj Images\\manoj 2-thumbnail.webp",
-        "size": 22644,
-        "reduction": "99.7%"
+        "size": 42782,
+        "reduction": "99.4%"
       },
       "medium": {
         "path": "optimized\\Manoj Images\\manoj 2-medium.webp",
-        "size": 78724,
-        "reduction": "98.8%"
+        "size": 139032,
+        "reduction": "97.9%"
       },
       "large": {
         "path": "optimized\\Manoj Images\\manoj 2-large.webp",
-        "size": 361702,
-        "reduction": "94.6%"
+        "size": 652898,
+        "reduction": "90.3%"
       }
     }
   },
@@ -362,18 +362,18 @@
     "variants": {
       "thumbnail": {
         "path": "optimized\\Manoj Images\\Manoj 3-thumbnail.webp",
-        "size": 8944,
-        "reduction": "99.8%"
+        "size": 16204,
+        "reduction": "99.7%"
       },
       "medium": {
         "path": "optimized\\Manoj Images\\Manoj 3-medium.webp",
-        "size": 28968,
-        "reduction": "99.4%"
+        "size": 53896,
+        "reduction": "99.0%"
       },
       "large": {
         "path": "optimized\\Manoj Images\\Manoj 3-large.webp",
-        "size": 167980,
-        "reduction": "96.7%"
+        "size": 378760,
+        "reduction": "92.6%"
       }
     }
   },
@@ -383,18 +383,18 @@
     "variants": {
       "thumbnail": {
         "path": "optimized\\Manoj Images\\Manoj 4-thumbnail.webp",
-        "size": 23044,
-        "reduction": "99.7%"
+        "size": 42658,
+        "reduction": "99.4%"
       },
       "medium": {
         "path": "optimized\\Manoj Images\\Manoj 4-medium.webp",
-        "size": 78718,
-        "reduction": "98.9%"
+        "size": 139260,
+        "reduction": "98.1%"
       },
       "large": {
         "path": "optimized\\Manoj Images\\Manoj 4-large.webp",
-        "size": 335888,
-        "reduction": "95.5%"
+        "size": 596934,
+        "reduction": "92.0%"
       }
     }
   },
@@ -404,18 +404,18 @@
     "variants": {
       "thumbnail": {
         "path": "optimized\\Manoj Images\\Manoj 5-thumbnail.webp",
-        "size": 3818,
-        "reduction": "99.9%"
+        "size": 6506,
+        "reduction": "99.8%"
       },
       "medium": {
         "path": "optimized\\Manoj Images\\Manoj 5-medium.webp",
-        "size": 11562,
-        "reduction": "99.6%"
+        "size": 20382,
+        "reduction": "99.3%"
       },
       "large": {
         "path": "optimized\\Manoj Images\\Manoj 5-large.webp",
-        "size": 57924,
-        "reduction": "98.1%"
+        "size": 129470,
+        "reduction": "95.7%"
       }
     }
   },

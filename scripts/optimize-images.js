@@ -112,6 +112,7 @@ async function optimizeImage(inputPath) {
             const outputPath = join(outputDir, `${baseName}-${sizeName}.webp`);
 
             await sharp(inputPath)
+                .rotate() // Automatically rotate based on EXIF orientation
                 .resize(config.width, null, {
                     withoutEnlargement: true,
                     fit: 'inside'
