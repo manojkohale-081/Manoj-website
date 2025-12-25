@@ -1,0 +1,464 @@
+[
+  {
+    "original": "Bts\\6D5A9982.JPG",
+    "originalSize": "1.12 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\6D5A9982-thumbnail.webp",
+        "size": 10964,
+        "reduction": "99.1%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\6D5A9982-medium.webp",
+        "size": 37074,
+        "reduction": "96.8%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\6D5A9982-large.webp",
+        "size": 179392,
+        "reduction": "84.7%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\DSC00439.jpg",
+    "originalSize": "2.4 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\DSC00439-thumbnail.webp",
+        "size": 29044,
+        "reduction": "98.8%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\DSC00439-medium.webp",
+        "size": 110064,
+        "reduction": "95.6%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\DSC00439-large.webp",
+        "size": 709744,
+        "reduction": "71.8%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\DSC09651.JPG",
+    "originalSize": "2.12 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\DSC09651-thumbnail.webp",
+        "size": 19150,
+        "reduction": "99.1%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\DSC09651-medium.webp",
+        "size": 66282,
+        "reduction": "97.0%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\DSC09651-large.webp",
+        "size": 356070,
+        "reduction": "84.0%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\DSC_7917.JPG",
+    "originalSize": "856.5 KB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\DSC_7917-thumbnail.webp",
+        "size": 21694,
+        "reduction": "97.5%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\DSC_7917-medium.webp",
+        "size": 66818,
+        "reduction": "92.4%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\DSC_7917-large.webp",
+        "size": 314332,
+        "reduction": "64.2%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\IMG_1861.JPG",
+    "originalSize": "3.26 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\IMG_1861-thumbnail.webp",
+        "size": 29114,
+        "reduction": "99.1%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\IMG_1861-medium.webp",
+        "size": 127744,
+        "reduction": "96.3%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\IMG_1861-large.webp",
+        "size": 969008,
+        "reduction": "71.6%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\IMG_3322.JPG",
+    "originalSize": "2.17 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\IMG_3322-thumbnail.webp",
+        "size": 27168,
+        "reduction": "98.8%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\IMG_3322-medium.webp",
+        "size": 94662,
+        "reduction": "95.8%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\IMG_3322-large.webp",
+        "size": 485560,
+        "reduction": "78.7%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\MHRA3599.JPG",
+    "originalSize": "1.86 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\MHRA3599-thumbnail.webp",
+        "size": 21280,
+        "reduction": "98.9%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\MHRA3599-medium.webp",
+        "size": 65326,
+        "reduction": "96.6%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\MHRA3599-large.webp",
+        "size": 295246,
+        "reduction": "84.8%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\MHRA4176.JPG",
+    "originalSize": "2.02 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\MHRA4176-thumbnail.webp",
+        "size": 17838,
+        "reduction": "99.2%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\MHRA4176-medium.webp",
+        "size": 57870,
+        "reduction": "97.3%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\MHRA4176-large.webp",
+        "size": 306974,
+        "reduction": "85.5%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\MHRA6206.JPG",
+    "originalSize": "999.78 KB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\MHRA6206-thumbnail.webp",
+        "size": 31194,
+        "reduction": "97.0%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\MHRA6206-medium.webp",
+        "size": 106058,
+        "reduction": "89.6%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\MHRA6206-large.webp",
+        "size": 450292,
+        "reduction": "56.0%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\NMG05427.JPG",
+    "originalSize": "1.88 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\NMG05427-thumbnail.webp",
+        "size": 19912,
+        "reduction": "99.0%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\NMG05427-medium.webp",
+        "size": 60840,
+        "reduction": "96.9%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\NMG05427-large.webp",
+        "size": 286070,
+        "reduction": "85.5%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\Prajakta mali .JPG",
+    "originalSize": "1.67 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\Prajakta mali -thumbnail.webp",
+        "size": 23974,
+        "reduction": "98.6%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\Prajakta mali -medium.webp",
+        "size": 75734,
+        "reduction": "95.7%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\Prajakta mali -large.webp",
+        "size": 362718,
+        "reduction": "79.2%"
+      }
+    }
+  },
+  {
+    "original": "Bts\\Yashraj mukhate.JPG",
+    "originalSize": "1.51 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Bts\\Yashraj mukhate-thumbnail.webp",
+        "size": 26428,
+        "reduction": "98.3%"
+      },
+      "medium": {
+        "path": "optimized\\Bts\\Yashraj mukhate-medium.webp",
+        "size": 87846,
+        "reduction": "94.5%"
+      },
+      "large": {
+        "path": "optimized\\Bts\\Yashraj mukhate-large.webp",
+        "size": 547932,
+        "reduction": "65.4%"
+      }
+    }
+  },
+  {
+    "original": "Corporate\\Concert.JPG",
+    "originalSize": "4.02 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Corporate\\Concert-thumbnail.webp",
+        "size": 8406,
+        "reduction": "99.8%"
+      },
+      "medium": {
+        "path": "optimized\\Corporate\\Concert-medium.webp",
+        "size": 27542,
+        "reduction": "99.3%"
+      },
+      "large": {
+        "path": "optimized\\Corporate\\Concert-large.webp",
+        "size": 123336,
+        "reduction": "97.1%"
+      }
+    }
+  },
+  {
+    "original": "Corporate\\Corporate Exp.JPG",
+    "originalSize": "11.19 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Corporate\\Corporate Exp-thumbnail.webp",
+        "size": 8302,
+        "reduction": "99.9%"
+      },
+      "medium": {
+        "path": "optimized\\Corporate\\Corporate Exp-medium.webp",
+        "size": 27950,
+        "reduction": "99.8%"
+      },
+      "large": {
+        "path": "optimized\\Corporate\\Corporate Exp-large.webp",
+        "size": 155566,
+        "reduction": "98.7%"
+      }
+    }
+  },
+  {
+    "original": "logo.png",
+    "originalSize": "228.29 KB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\logo-thumbnail.webp",
+        "size": 10730,
+        "reduction": "95.4%"
+      },
+      "medium": {
+        "path": "optimized\\logo-medium.webp",
+        "size": 20912,
+        "reduction": "91.1%"
+      },
+      "large": {
+        "path": "optimized\\logo-large.webp",
+        "size": 26068,
+        "reduction": "88.8%"
+      }
+    }
+  },
+  {
+    "original": "Manoj Images\\Manoj 1.jpg",
+    "originalSize": "148.78 KB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Manoj Images\\Manoj 1-thumbnail.webp",
+        "size": 14674,
+        "reduction": "90.4%"
+      },
+      "medium": {
+        "path": "optimized\\Manoj Images\\Manoj 1-medium.webp",
+        "size": 44390,
+        "reduction": "70.9%"
+      },
+      "large": {
+        "path": "optimized\\Manoj Images\\Manoj 1-large.webp",
+        "size": 85462,
+        "reduction": "43.9%"
+      }
+    }
+  },
+  {
+    "original": "Manoj Images\\manoj 2.JPG",
+    "originalSize": "6.45 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Manoj Images\\manoj 2-thumbnail.webp",
+        "size": 22644,
+        "reduction": "99.7%"
+      },
+      "medium": {
+        "path": "optimized\\Manoj Images\\manoj 2-medium.webp",
+        "size": 78724,
+        "reduction": "98.8%"
+      },
+      "large": {
+        "path": "optimized\\Manoj Images\\manoj 2-large.webp",
+        "size": 361702,
+        "reduction": "94.6%"
+      }
+    }
+  },
+  {
+    "original": "Manoj Images\\Manoj 3.JPEG",
+    "originalSize": "4.91 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Manoj Images\\Manoj 3-thumbnail.webp",
+        "size": 8944,
+        "reduction": "99.8%"
+      },
+      "medium": {
+        "path": "optimized\\Manoj Images\\Manoj 3-medium.webp",
+        "size": 28968,
+        "reduction": "99.4%"
+      },
+      "large": {
+        "path": "optimized\\Manoj Images\\Manoj 3-large.webp",
+        "size": 167980,
+        "reduction": "96.7%"
+      }
+    }
+  },
+  {
+    "original": "Manoj Images\\Manoj 4.JPG",
+    "originalSize": "7.08 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Manoj Images\\Manoj 4-thumbnail.webp",
+        "size": 23044,
+        "reduction": "99.7%"
+      },
+      "medium": {
+        "path": "optimized\\Manoj Images\\Manoj 4-medium.webp",
+        "size": 78718,
+        "reduction": "98.9%"
+      },
+      "large": {
+        "path": "optimized\\Manoj Images\\Manoj 4-large.webp",
+        "size": 335888,
+        "reduction": "95.5%"
+      }
+    }
+  },
+  {
+    "original": "Manoj Images\\Manoj 5.JPG",
+    "originalSize": "2.88 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Manoj Images\\Manoj 5-thumbnail.webp",
+        "size": 3818,
+        "reduction": "99.9%"
+      },
+      "medium": {
+        "path": "optimized\\Manoj Images\\Manoj 5-medium.webp",
+        "size": 11562,
+        "reduction": "99.6%"
+      },
+      "large": {
+        "path": "optimized\\Manoj Images\\Manoj 5-large.webp",
+        "size": 57924,
+        "reduction": "98.1%"
+      }
+    }
+  },
+  {
+    "original": "Mpl\\MPL Hosting.JPG",
+    "originalSize": "4.52 MB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Mpl\\MPL Hosting-thumbnail.webp",
+        "size": 15686,
+        "reduction": "99.7%"
+      },
+      "medium": {
+        "path": "optimized\\Mpl\\MPL Hosting-medium.webp",
+        "size": 57180,
+        "reduction": "98.8%"
+      },
+      "large": {
+        "path": "optimized\\Mpl\\MPL Hosting-large.webp",
+        "size": 241314,
+        "reduction": "94.9%"
+      }
+    }
+  },
+  {
+    "original": "Shadi events\\Weeding and Sangeet Night.jpg",
+    "originalSize": "219.92 KB",
+    "variants": {
+      "thumbnail": {
+        "path": "optimized\\Shadi events\\Weeding and Sangeet Night-thumbnail.webp",
+        "size": 26478,
+        "reduction": "88.2%"
+      },
+      "medium": {
+        "path": "optimized\\Shadi events\\Weeding and Sangeet Night-medium.webp",
+        "size": 97086,
+        "reduction": "56.9%"
+      },
+      "large": {
+        "path": "optimized\\Shadi events\\Weeding and Sangeet Night-large.webp",
+        "size": 234902,
+        "reduction": "-4.3%"
+      }
+    }
+  }
+]
