@@ -28,7 +28,7 @@ const portfolioCategories = [
     tagline: "He keeps the crowd roaring higher than the scoreboard.",
     locations: "Sports Anchor Maharashtra",
     color: "from-green-500/20 to-transparent",
-    image: "/optimized/Mpl/MPL Hosting-medium.webp",
+    image: "/optimized/Mpl/Sports & Cricket Hosting-medium.webp",
   },
   {
     icon: Music2,

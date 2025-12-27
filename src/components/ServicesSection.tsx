@@ -45,7 +45,7 @@ const ServicesSection = () => {
             Services
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            From boardrooms to baraats, professional hosting for every occasion
+            From stadiums to weddings, professional hosting for every occasion
           </p>
         </div>
 

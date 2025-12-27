@@ -63,35 +63,41 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <h1 className="font-heading text-5xl md:text-7xl font-extrabold mb-4">
+              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-4 whitespace-nowrap">
                 <span className="text-primary">Emcee</span>{" "}
                 <span className="text-foreground">Manoj</span>
               </h1>
             </motion.div>
 
-            {/* Acronym Animation */}
+            {/* Acronym Animation - Clean inline design */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border"
+              className="relative"
             >
-              <div className="flex justify-center lg:justify-start gap-3 mb-4">
+              {/* Letters row */}
+              <div className="flex justify-center lg:justify-start gap-3 md:gap-4 mb-2">
                 {acronymData.map((item, index) => (
                   <span
                     key={item.letter}
-                    className={`font-heading text-3xl md:text-4xl font-extrabold transition-all duration-300 ${index === activeIndex
-                      ? "text-primary scale-125"
-                      : "text-foreground/40"
+                    className={`font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold transition-all duration-300 cursor-default ${index === activeIndex
+                      ? "text-primary scale-110"
+                      : "text-foreground/30 hover:text-foreground/50"
                       } ${index === activeIndex && isAnimating ? "letter-flip" : ""}`}
+                    style={index === activeIndex ? { textShadow: '0 0 25px rgba(212, 175, 55, 0.6)' } : {}}
                   >
                     {item.letter}
                   </span>
                 ))}
               </div>
-              <p className="font-accent text-lg md:text-xl text-primary italic min-h-[2rem]">
-                {acronymData[activeIndex].meaning}
-              </p>
+              {/* Meaning with gradient underline */}
+              <div className="relative inline-block">
+                <p className="font-accent text-lg md:text-xl text-primary italic">
+                  {acronymData[activeIndex].meaning}
+                </p>
+                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent rounded-full" />
+              </div>
             </motion.div>
 
             {/* Tagline */}
