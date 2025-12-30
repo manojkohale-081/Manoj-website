@@ -1,0 +1,32 @@
+import ServicePageLayout from "@/components/ServicePageLayout";
+
+const ConcertPage = () => {
+    return (
+        <ServicePageLayout
+            title="Concerts & Entertainment Nights"
+            tagline="He isn't just hosting, he's running the vibe."
+            description="40,000 fans. Big lights. Loud cheers. Pure adrenaline. Emcee Manoj has hosted some of the biggest concert stages, keeping the energy sky-high between performances and creating unforgettable crowd moments. From Bollywood nights to rock concerts, he knows how to command any stage."
+            heroImage="/optimized/Corporate/Concert-large.webp"
+            color="from-purple-500/20 to-violet-500/10"
+            galleryImages={[
+                "/optimized/Corporate/Concert-medium.webp",
+            ]}
+            testimonials={[
+                {
+                    text: "Professional hosting for every occasion. From boardrooms to baraats, Emcee Manoj brings the energy!",
+                    by: "Concert Organizer"
+                },
+                {
+                    text: "Manoj has great charisma and fabulous personality whilst hosting events. He's witty and a passionate anchor and handles crowd like a charm. I would highly recommend hiring him!",
+                    by: "Yash Bapat"
+                },
+                {
+                    text: "Zero dull seconds with Emcee Manoj on stage. The crowd was engaged from start to finish!",
+                    by: "Music Festival Producer"
+                },
+            ]}
+        />
+    );
+};
+
+export default ConcertPage;

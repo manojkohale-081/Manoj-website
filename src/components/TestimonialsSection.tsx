@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              Click Here to See More Reviews
+              See More Reviews
               <ExternalLink className="w-4 h-4" />
             </a>
           </Button>

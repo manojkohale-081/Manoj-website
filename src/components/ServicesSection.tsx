@@ -1,4 +1,5 @@
 import { Briefcase, Heart, Music, Mic2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -7,6 +8,7 @@ const services = [
     subtitle: "Awards Nights | Launches | Offsites | Annual Days",
     description: "Engagement that even CEOs can't resist.",
     tags: ["Corporate Anchor Pune", "Corporate Emcee Mumbai", "Corporate Anchor India"],
+    link: "/services/corporate",
   },
   {
     icon: Heart,
@@ -14,6 +16,7 @@ const services = [
     subtitle: "Receptions | Sangeets | Haldi | Cocktail Nights",
     description: "He brings the love, the laughs, and the legendary dance-offs, and he makes sure it all flows.",
     tags: ["Wedding Anchor Nagpur", "Wedding Anchor Pune", "Wedding Anchor India"],
+    link: "/services/wedding",
   },
   {
     icon: Music,
@@ -21,6 +24,7 @@ const services = [
     subtitle: "Fan zones | Festivals | Celebrity nights",
     description: "Cheers louder. Flash brighter. Vibe higher.",
     tags: ["Concert Host India", "Entertainment Emcee"],
+    link: "/services/concerts",
   },
   {
     icon: Mic2,
@@ -28,6 +32,7 @@ const services = [
     subtitle: "Workshops | Online & Offline",
     description: "Training future anchors through @talktermanoj & @speakoskills",
     tags: ["Public Speaking Trainer", "Communication Coach Maharashtra"],
+    link: "/services/public-speaking",
   },
 ];
 
@@ -77,7 +82,7 @@ const ServicesSection = () => {
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {service.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
@@ -87,6 +92,18 @@ const ServicesSection = () => {
                     </span>
                   ))}
                 </div>
+
+                {/* Explore Button */}
+                <Link
+                  to={service.link}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors"
+                >
+                  See More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
           ))}

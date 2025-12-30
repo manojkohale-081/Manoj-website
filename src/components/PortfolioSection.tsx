@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Building2, Heart, Trophy, Music2, Image, X } from "lucide-react";
 import InstagramReels from "./InstagramReels";
 
@@ -11,6 +12,7 @@ const portfolioCategories = [
     locations: "Corporate Anchor in Pune | Mumbai | Nagpur",
     color: "from-blue-500/20 to-transparent",
     image: "/optimized/Corporate/Corporate Exp-medium.webp",
+    slug: "/services/corporate",
   },
   {
     icon: Heart,
@@ -20,6 +22,7 @@ const portfolioCategories = [
     locations: "Wedding Anchor India | Hindi/Marathi Emcee",
     color: "from-pink-500/20 to-transparent",
     image: "/optimized/Shadi events/Weeding and Sangeet Night-medium.webp",
+    slug: "/services/wedding",
   },
   {
     icon: Trophy,
@@ -29,6 +32,7 @@ const portfolioCategories = [
     locations: "Sports Anchor Maharashtra",
     color: "from-green-500/20 to-transparent",
     image: "/optimized/Mpl/Sports & Cricket Hosting-medium.webp",
+    slug: "/services/sports",
   },
   {
     icon: Music2,
@@ -38,6 +42,7 @@ const portfolioCategories = [
     locations: "Concert Emcee | Event Host India",
     color: "from-purple-500/20 to-transparent",
     image: "/optimized/Corporate/Concert-medium.webp",
+    slug: "/services/concerts",
   },
 ];
 
@@ -92,9 +97,10 @@ const PortfolioSection = () => {
         {/* Portfolio Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
           {portfolioCategories.map((category, index) => (
-            <div
+            <Link
+              to={category.slug}
               key={index}
-              className="group relative bg-card rounded-3xl overflow-hidden border border-border card-hover"
+              className="group relative bg-card rounded-3xl overflow-hidden border border-border card-hover block"
             >
               {/* Image area */}
               <div className={`aspect-video bg-gradient-to-br ${category.color} from-accent/50 to-card relative overflow-hidden`}>
@@ -134,7 +140,7 @@ const PortfolioSection = () => {
                   {category.locations}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

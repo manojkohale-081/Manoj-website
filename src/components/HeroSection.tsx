@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Mic, Play, Instagram, Facebook, Linkedin, Youtube, MapPin, X } from "lucide-react";
+import { Mic, Instagram, Facebook, Linkedin, Youtube, MapPin, X } from "lucide-react";
 import { AnimatedDock } from "@/components/ui/animated-dock";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -43,7 +43,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-spotlight pointer-events-none" />
 
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="absolute top-20 left-10 w-96 h-96 bg-primary rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-secondary rounded-full blur-3xl" />
       </div>
@@ -123,15 +123,17 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <Button variant="hero" size="xl" asChild>
-                <a href="#contact" className="flex items-center gap-2">
+                <a href="/#contact" className="flex items-center gap-2">
                   <Mic className="w-5 h-5" />
                   Book Emcee Manoj
                 </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="#reels" className="flex items-center gap-2">
-                  <Play className="w-5 h-5" />
-                  Watch the Magic
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                  Watch in Action
                 </a>
               </Button>
             </motion.div>
@@ -166,8 +168,6 @@ const HeroSection = () => {
                     src={heroImages[activeIndex]}
                     alt="Emcee Manoj - Professional Anchor and Host"
                     loading="eager"
-                    fetchPriority="high"
-                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </AnimatePresence>

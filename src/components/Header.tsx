@@ -1,19 +1,22 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#videos", label: "Videos" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#contact", label: "Contact" },
+  { href: "about", label: "About" },
+  { href: "services", label: "Services" },
+  { href: "portfolio", label: "Portfolio" },
+  { href: "videos", label: "Videos" },
+  { href: "testimonials", label: "Testimonials" },
+  { href: "contact", label: "Contact" },
 ];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,35 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Handle hash navigation when coming from another page
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [location]);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+
+    // If we're on the home page, just scroll to the section
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // If we're on another page, navigate to home with hash
+      navigate(`/#${sectionId}`);
+    }
+
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header
@@ -33,27 +65,33 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
               src="/optimized/logo-medium.webp"
               alt="Emcee Manoj"
               className="h-12 w-auto"
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
-                className="font-heading font-medium text-foreground/80 hover:text-primary transition-colors"
+                href={`/#${link.href}`}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="font-heading font-medium text-foreground/80 hover:text-primary transition-colors cursor-pointer"
               >
                 {link.label}
               </a>
             ))}
             <Button variant="default" size="lg" asChild>
-              <a href="#contact">Book Now</a>
+              <a
+                href="/#contact"
+                onClick={(e) => handleNavClick(e, "contact")}
+              >
+                Book Now
+              </a>
             </Button>
           </nav>
 
@@ -78,15 +116,20 @@ const Header = () => {
               {navLinks.map((link) => (
                 <a
                   key={link.href}
-                  href={link.href}
-                  className="font-heading font-medium text-foreground/80 hover:text-primary transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  href={`/#${link.href}`}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                  className="font-heading font-medium text-foreground/80 hover:text-primary transition-colors py-2 cursor-pointer"
                 >
                   {link.label}
                 </a>
               ))}
               <Button variant="default" className="mt-2" asChild>
-                <a href="#contact">Book Now</a>
+                <a
+                  href="/#contact"
+                  onClick={(e) => handleNavClick(e, "contact")}
+                >
+                  Book Now
+                </a>
               </Button>
             </div>
           </nav>
@@ -97,3 +140,4 @@ const Header = () => {
 };
 
 export default Header;
+

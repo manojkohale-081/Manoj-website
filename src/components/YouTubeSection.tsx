@@ -75,7 +75,7 @@ const YouTubeSection = () => {
                         className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors"
                     >
                         <Youtube className="w-5 h-5" />
-                        View All Videos on YouTube
+                        Watch more on YouTube
                     </a>
                 </div>
             </div>

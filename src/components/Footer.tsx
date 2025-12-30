@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Built by */}
           <p className="text-xs text-muted-foreground/70">
-            Built with 💗 by{" "}
+            Built by{" "}
             <a
               href="https://pluginpop.com"
               target="_blank"
