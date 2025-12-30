@@ -1,7 +1,6 @@
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Mic } from "lucide-react";
+import { Mic } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -33,8 +32,6 @@ const ServicePageLayout = ({
     color,
     testimonials,
 }: ServicePageLayoutProps) => {
-    const navigate = useNavigate();
-
     useEffect(() => {
         document.documentElement.classList.add("dark");
         window.scrollTo(0, 0);
@@ -48,16 +45,6 @@ const ServicePageLayout = ({
         }
     };
 
-    const handleGoBack = () => {
-        navigate("/");
-        setTimeout(() => {
-            const servicesElement = document.getElementById("services");
-            if (servicesElement) {
-                servicesElement.scrollIntoView({ behavior: "smooth" });
-            }
-        }, 100);
-    };
-
     return (
         <main className="min-h-screen bg-background">
             <Header />
@@ -66,20 +53,6 @@ const ServicePageLayout = ({
             <section className="relative pt-24 pb-16 overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-20`} />
                 <div className="container mx-auto px-4">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <button
-                            onClick={handleGoBack}
-                            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-6 transition-colors font-medium cursor-pointer"
-                        >
-                            <ArrowLeft className="w-5 h-5" />
-                            Back to Services
-                        </button>
-                    </motion.div>
-
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
@@ -115,6 +88,7 @@ const ServicePageLayout = ({
                             <img
                                 src={heroImage}
                                 alt={title}
+                                loading="eager"
                                 className="relative w-full h-auto rounded-3xl border-4 border-primary/30 shadow-2xl"
                             />
                         </motion.div>
@@ -147,6 +121,7 @@ const ServicePageLayout = ({
                                     <img
                                         src={img}
                                         alt={`${title} gallery ${index + 1}`}
+                                        loading="lazy"
                                         className="w-full h-full object-cover"
                                     />
                                 </motion.div>
