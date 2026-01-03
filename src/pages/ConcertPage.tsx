@@ -6,10 +6,15 @@ const ConcertPage = () => {
             title="Concerts & Entertainment Nights"
             tagline="He isn't just hosting, he's running the vibe."
             description="40,000 fans. Big lights. Loud cheers. Pure adrenaline. Emcee Manoj has hosted some of the biggest concert stages, keeping the energy sky-high between performances and creating unforgettable crowd moments. From Bollywood nights to rock concerts, he knows how to command any stage."
-            heroImage="/optimized/Corporate/Concert-large.webp"
+            heroImage="/optimized/Concert/MHRA6200-large.webp"
             color="from-purple-500/20 to-violet-500/10"
             galleryImages={[
-                "/optimized/Corporate/Concert-medium.webp",
+                "/optimized/Concert/DSC_4070-medium.webp",
+                "/optimized/Concert/DSC_5294-medium.webp",
+                "/optimized/Concert/IMG_8085-medium.webp",
+                "/optimized/Concert/MHRA5715-medium.webp",
+                "/optimized/Concert/MHRA6192-medium.webp",
+                "/optimized/Concert/MHRA6200-medium.webp",
             ]}
             testimonials={[
                 {

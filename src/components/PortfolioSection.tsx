@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Building2, Heart, Trophy, Music2, Image, X } from "lucide-react";
 import InstagramReels from "./InstagramReels";
+import { GalleryCarousel } from "@/components/ui/gallery-carousel";
 
 const portfolioCategories = [
   {
@@ -144,30 +145,12 @@ const PortfolioSection = () => {
           ))}
         </div>
 
-        {/* Gallery Grid */}
+        {/* Gallery Carousel */}
         <div className="text-center">
-          <h3 className="font-heading text-2xl font-bold text-foreground mb-8">
-            Gallery & BTS
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {shuffledImages.map((image, index) => (
-              <div
-                key={index}
-                onClick={() => setSelectedImage(image)}
-                className="aspect-square rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/50 transition-all hover:scale-105 cursor-pointer"
-              >
-                <img
-                  src={`/optimized/Bts/${image}`}
-                  alt={`Behind the scenes ${index + 1}`}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-          <p className="font-accent text-muted-foreground mt-6 italic">
-            "You can feel the energy even in pictures."
-          </p>
+          <GalleryCarousel
+            images={shuffledImages}
+            onImageClick={(image) => setSelectedImage(image)}
+          />
 
           {/* Instagram Reels Section */}
           <InstagramReels />
